@@ -72,6 +72,18 @@ const alias = [
 		replacement: resolve(packagesDir, 'frontend', '@n8n', 'i18n', 'src$1'),
 	},
 	{
+		find: /^@n8n\/rest-api-client$/,
+		replacement: resolve(packagesDir, 'frontend', '@n8n', 'rest-api-client', 'src/index.ts'),
+	},
+	{
+		find: /^@n8n\/rest-api-client(.+)$/,
+		replacement: resolve(packagesDir, 'frontend', '@n8n', 'rest-api-client', 'src$1'),
+	},
+	{
+		find: /^@n8n\/stores$/,
+		replacement: resolve(packagesDir, 'frontend', '@n8n', 'stores', 'src/index.ts'),
+	},
+	{
 		find: /^@n8n\/stores(.+)$/,
 		replacement: resolve(packagesDir, 'frontend', '@n8n', 'stores', 'src$1'),
 	},
